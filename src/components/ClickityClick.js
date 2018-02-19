@@ -10,9 +10,15 @@ export default class ClickityClick extends React.Component{
   }
 
   handleClick = () => {
-    this.setState({
-      hasBeenClicked: true
-    })
+    if(this.state.hasBeenClicked){
+      this.setState({
+        hasBeenClicked: false
+      })
+    }else{
+      this.setState({
+        hasBeenClicked: true
+      })
+    }
   }
 
   render(){
