@@ -7,3 +7,5 @@ ReactDOM.render(
   </div>,
   document.getElementById('root')
 );
+
+let done = "done"
